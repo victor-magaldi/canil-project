@@ -3,17 +3,14 @@
 
 # Rodando projeto 
 
-## Dependências globais 
-- nodemon
-- typescript
-- ts-node
+## Dependências 
 
+Para realizar a instalação:
 ```bash
-    yarn add global nodemon typescript ts-node
+    yarn 
 ```
-ou 
-
+Para rodar em modo de desenvolvimento:
 ```bash
-    npm install global nodemon typescript ts-node
+    yarn dev
 ```
 
