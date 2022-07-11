@@ -1,0 +1,8 @@
+{
+  "name": "canil-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/victor-magaldi/canil-project.git",
+  "author": "victor de souza magaldi <victmagaldi@hotmail.com>",
+  "license": "MIT"
+}
