@@ -15,7 +15,7 @@ app.set("views", path.join(__dirname, "views"));
 
 
 app.get("/", function (req, res) {
-  res.render("teste");
+  res.render("teste",{name:"Victor"});
 });
 
 app.listen(process.env.PORT);
