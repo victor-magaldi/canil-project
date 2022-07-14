@@ -1,5 +1,5 @@
 # canil-project
-
+Projeto inspirado em um curso onde decidi aprimorar e usar outro template engine(EJS)
 
 # Rodando projeto 
 
