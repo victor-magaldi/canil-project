@@ -1,22 +1,22 @@
-import express from "express"
-import dotenv from "dotenv";
-import ejs from "ejs";
-import path from "path"
-import {router} from "./routes"
+import express from 'express'
+import dotenv from 'dotenv'
+import ejs from 'ejs'
+import path from 'path'
+import { router } from './routes'
 
 dotenv.config()
 
 const app = express()
 
-app.set("view engine", "ejs")
-app.set("views", path.join(__dirname, "views"));
-app.set("views", path.join(__dirname, "views"));
-app.set("views", path.join(__dirname, "views"));
-app.use(express.static(path.join(__dirname, "../public")));
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'))
+app.set('views', path.join(__dirname, 'views'))
+app.set('views', path.join(__dirname, 'views'))
+app.use(express.static(path.join(__dirname, '../public')))
 
 app.use(router)
-app.use((req,res)=>{
-  res.send("404 - página não encontrada")
-});
+app.use((req, res) => {
+    res.send('404 - página não encontrada')
+})
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT)

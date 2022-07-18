@@ -1,16 +1,19 @@
 # canil-project
+
 Projeto inspirado em um curso onde decidi aprimorar e usar outro template engine(EJS)
 
-# Rodando projeto 
+# Rodando projeto
 
-## Dependências 
+## Dependências
 
 Para realizar a instalação:
+
 ```bash
-    yarn 
+    yarn
 ```
+
 Para rodar em modo de desenvolvimento:
+
 ```bash
     yarn dev
 ```
-
