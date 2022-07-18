@@ -6,7 +6,7 @@
     "author": "victor de souza magaldi <victmagaldi@hotmail.com>",
     "license": "MIT",
     "scripts": {
-        "format":"npx  prettier './src/*' --write",
+        "format":"prettier src/* --write",
         "dev": "npx nodemon -e ts,json,ejs src/server.ts"
     },
     "dependencies": {
