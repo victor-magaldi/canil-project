@@ -1,7 +1,9 @@
 <%- include('../partials/header') %>
 
-<section class="banner" style="background-image: url('images/allanimals.jpg')">Todos os animais</section>
-<h2>Todos os animais disponíveis para adoção</h2>
+<section class="banner" style="background-image: url('/images/allanimals.jpg')">Todos os animais</section>
+<% if (banner) { %>
+  <h2><%= banner.title %></h2>
+<% } %>
 
 <div class="container list">
     <div class="item">
