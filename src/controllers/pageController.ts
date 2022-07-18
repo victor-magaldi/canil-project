@@ -2,8 +2,9 @@ import { Request,Response } from "express";
 
 export const home = (req:Request, res:Response)=>{
     res.render("pages/page", {
+      titlePage: "Todos os animais disponíveis para adoção",
       banner: {
-        title: "Todos os animais disponíveis para adoção",
+        title:"Todos os animais",
         backgroundUrl: "/images/allanimals.jpg",
       },
     });

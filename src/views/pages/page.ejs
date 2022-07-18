@@ -1,8 +1,12 @@
 <%- include('../partials/header') %>
 
-<section class="banner" style="background-image: url('/images/allanimals.jpg')">Todos os animais</section>
+
 <% if (banner) { %>
-  <h2><%= banner.title %></h2>
+  <section class="banner"  style= "background-image: url('<%= banner.backgroundUrl%>')"><%= banner.title %></section>
+<% } %>
+
+<% if (titlePage) { %>
+  <h2><%= titlePage %></h2>
 <% } %>
 
 <div class="container list">
