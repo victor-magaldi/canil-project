@@ -10,6 +10,30 @@ export const home = (req:Request, res:Response)=>{
     });
 }
 
-export const dogs = (req: Request, res: Response) => {};
-export const cats = (req: Request, res: Response) => {};
-export const fishes = (req: Request, res: Response) => {};
+export const dogs = (req: Request, res: Response) => {
+    res.render("pages/page", {
+        titlePage: "Cachorros disponíveis para adoção",
+        banner: {
+        title: "Cachorros",
+        backgroundUrl: "/images/banner_dog.jpg",
+        },
+    });
+};
+export const cats = (req: Request, res: Response) => {
+    res.render("pages/page", {
+      titlePage: "Gatos disponíveis para adoção",
+      banner: {
+        title: "Gatos",
+        backgroundUrl: "/images/banner_cat.jpg",
+      },
+    });
+};
+export const fishes = (req: Request, res: Response) => {
+    res.render("pages/page", {
+      titlePage: "peixes disponíveis para adoção",
+      banner: {
+        title: "peixes",
+        backgroundUrl: "/images/banner_fish.jpg",
+      },
+    });
+};
