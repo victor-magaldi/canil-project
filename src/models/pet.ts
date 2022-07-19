@@ -1,10 +1,14 @@
+type PetType = 'dog' | 'cat' | 'fish'
+type PetSex = 'macho' | 'fêmea'
+
 type Pet = {
-  type: 'dog' | 'cat' | 'fish'
+  type: PetType
   image: string
   name: string
   color: string
-  sex: 'macho' | 'fêmea'
+  sex: PetSex
 }
+
 const data: Array<Pet> = [
   {
     type: 'dog',
@@ -126,8 +130,22 @@ const data: Array<Pet> = [
     sex: 'macho',
   },
 ]
+
 export const Pet = {
   getAll: () => {
     return data
+  },
+
+  getFromType: (type: PetType) => {
+    return data.filter((item) => item.type === type)
+  },
+
+  getFromName: (name: string) => {
+    return data.filter(
+      (item) => item.name.toLowerCase().indexOf(name.toLowerCase()) > -1
+    )
+  },
+  getFromRace: (type: PetType) => {
+    return data.filter((item) => item.type === type)
   },
 }
