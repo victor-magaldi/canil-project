@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetDevShop - O petshop do dev</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
-</head>
-<body>
-<header>
-    <div class="container">
+  </head>
+  <body>
+    <header>
+      <div class="container">
         <a href="">PetDevShop</a>
         <form method="GET" action="/search">
-            <input type="search" name="q" placeholder="Pesquise por raça" />
+          <input type="search" name="q" placeholder="Pesquise por raça" />
         </form>
-    </div>
-    <nav>
+      </div>
+      <nav>
         <ul>
-            <li class="active"><a href="">Todos</a></li>
-            <li class=""><a href="/dogs">Cachorros</a></li>
-            <li class=""><a href="/cats">Gatos</a></li>
-            <li class=""><a href="/fishes">Peixes</a></li>
+          <li class="<%if (menu.all) {%> active <%}%>"><a href="">Todos</a></li>
+          <li class="<%if (menu.dogs) {%> active <%}%>">
+            <a href="/dogs">Cachorros</a>
+          </li>
+          <li class="<%if (menu.cats) {%> active <%}%>">
+            <a href="/cats">Gatos</a>
+          </li>
+          <li class="<%if (menu.fishes) {%> active <%}%>">
+            <a href="/fishes">Peixes</a>
+          </li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
+  </body>
+</html>
