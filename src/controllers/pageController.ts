@@ -1,13 +1,10 @@
 import { Request, Response } from 'express'
 
+import { createMenuObj } from '../helpers/createMenuObj'
+
 export const home = (req: Request, res: Response) => {
   res.render('pages/page', {
-    menu: {
-      all: true,
-      dogs: false,
-      cats: false,
-      fishes: false,
-    },
+    menu: createMenuObj('all'),
     titlePage: 'Todos os animais disponíveis para adoção',
     banner: {
       title: 'Todos os animais',
@@ -18,12 +15,7 @@ export const home = (req: Request, res: Response) => {
 
 export const dogs = (req: Request, res: Response) => {
   res.render('pages/page', {
-    menu: {
-      all: false,
-      dogs: true,
-      cats: false,
-      fishes: false,
-    },
+    menu: createMenuObj('dogs'),
     titlePage: 'Cachorros disponíveis para adoção',
     banner: {
       title: 'Cachorros',
@@ -33,12 +25,7 @@ export const dogs = (req: Request, res: Response) => {
 }
 export const cats = (req: Request, res: Response) => {
   res.render('pages/page', {
-    menu: {
-      all: false,
-      dogs: false,
-      cats: true,
-      fishes: false,
-    },
+    menu: createMenuObj('cats'),
     titlePage: 'Gatos disponíveis para adoção',
     banner: {
       title: 'Gatos',
@@ -48,12 +35,7 @@ export const cats = (req: Request, res: Response) => {
 }
 export const fishes = (req: Request, res: Response) => {
   res.render('pages/page', {
-    menu: {
-      all: false,
-      dogs: false,
-      cats: false,
-      fishes: true,
-    },
+    menu: createMenuObj('fishes'),
     titlePage: 'peixes disponíveis para adoção',
     banner: {
       title: 'peixes',
