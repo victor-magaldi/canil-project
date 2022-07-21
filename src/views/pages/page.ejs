@@ -8,8 +8,7 @@
 
 <% } %> <% if (titlePage) { %>
 <h2><%= titlePage %></h2>
-<% } %>
-
+<% } %> <% if (list.length>0) { %>
 <div class="container list">
   <% list.forEach(function(pet){ %>
   <div class="item">
@@ -20,4 +19,9 @@
   </div>
   <% }); %>
 </div>
-<%- include('../partials/footer') %>
+
+<% } else { %>
+<div class="container no-list">
+  <h2>Não foi possível encontrar animais para o termo buscado</h2>
+</div>
+<% } %> <%- include('../partials/footer') %>
