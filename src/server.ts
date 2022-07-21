@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import ejs from 'ejs'
 import path from 'path'
 import { router } from './routes'
+import { createMenuObj } from './helpers/createMenuObj'
 
 dotenv.config()
 
@@ -15,8 +16,11 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, '../public')))
 
 app.use(router)
+
 app.use((req, res) => {
-    res.send('404 - página não encontrada')
+  res.render('pages/404', {
+    menu: createMenuObj(''),
+  })
 })
 
 app.listen(process.env.PORT)
