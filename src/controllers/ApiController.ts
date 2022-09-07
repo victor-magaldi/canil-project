@@ -13,18 +13,10 @@ export const getDogs = (req: Request, res: Response) => {
 
   res.json(list)
 }
-export const cats = (req: Request, res: Response) => {
+export const getCats = (req: Request, res: Response) => {
   let list = Pet.getFromType('cat')
 
-  res.render('pages/page', {
-    menu: createMenuObj('cats'),
-    titlePage: 'Gatos disponíveis para adoção',
-    banner: {
-      title: 'Gatos',
-      backgroundUrl: '/images/banner_cat.jpg',
-    },
-    list,
-  })
+  res.json(list)
 }
 export const fishes = (req: Request, res: Response) => {
   let list = Pet.getFromType('fish')
