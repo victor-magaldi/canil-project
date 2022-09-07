@@ -15,5 +15,6 @@ router.get('/search', SearchController.search)
 router.get('/v1/api/all', ApiController.getAll)
 router.get('/v1/api/dogs', ApiController.getDogs)
 router.get('/v1/api/cats', ApiController.getCats)
+router.get('/v1/api/fishes', ApiController.getFishes)
 
 export { router }

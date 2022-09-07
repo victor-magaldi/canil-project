@@ -18,16 +18,15 @@ export const getCats = (req: Request, res: Response) => {
 
   res.json(list)
 }
-export const fishes = (req: Request, res: Response) => {
+export const getFishes = (req: Request, res: Response) => {
   let list = Pet.getFromType('fish')
 
-  res.render('pages/page', {
-    menu: createMenuObj('fishes'),
-    titlePage: 'peixes disponíveis para adoção',
-    banner: {
-      title: 'peixes',
-      backgroundUrl: '/images/banner_fish.jpg',
-    },
-    list,
-  })
+  res.json(list)
+}
+export const search = (req: Request, res: Response) => {
+  let query: string = req.query.q as string
+
+  let list = Pet.getFromName(query)
+
+  res.json(list)
 }
