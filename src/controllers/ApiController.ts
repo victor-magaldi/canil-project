@@ -8,18 +8,10 @@ export const getAll = (req: Request, res: Response) => {
   res.json(list)
 }
 
-export const dogs = (req: Request, res: Response) => {
+export const getDogs = (req: Request, res: Response) => {
   let list = Pet.getFromType('dog')
 
-  res.render('pages/page', {
-    menu: createMenuObj('dogs'),
-    titlePage: 'Cachorros disponíveis para adoção',
-    banner: {
-      title: 'Cachorros',
-      backgroundUrl: '/images/banner_dog.jpg',
-    },
-    list,
-  })
+  res.json(list)
 }
 export const cats = (req: Request, res: Response) => {
   let list = Pet.getFromType('cat')

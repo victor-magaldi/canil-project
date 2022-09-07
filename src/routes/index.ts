@@ -13,5 +13,6 @@ router.get('/fishes', PageController.fishes)
 router.get('/search', SearchController.search)
 
 router.get('/v1/api/dogs', ApiController.getAll)
+router.get('/v1/api/dogs', ApiController.getDogs)
 
 export { router }
