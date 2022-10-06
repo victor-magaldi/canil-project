@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "id": "999999",
+      "quantity": 1,
+      "seller": "fulfillmentselleridvct",
+      "parentItemIndex": null,
+      "parentAssemblyBinding": null
+    }
+  ],
+  "priceTables": [],
+  "marketingData": null,
+  "postalCode": null,
+  "country": null,
+  "selectedSla": null,
+  "clientProfileData": null,
+  "shippingData": {
+    "state": null,
+    "city": null,
+    "neighborhood": null,
+    "street": null,
+    "isFOB": false,
+    "selectedAddresses": [],
+    "logisticsInfo": [
+      {
+        "itemIndex": 0,
+        "selectedDeliveryChannel": "delivery",
+        "selectedSLAId": null,
+        "addressId": null,
+        "deliveryIds": [],
+        "price": null,
+        "shippingEstimate": null
+      }
+    ]
+  },
+  "paymentData": null,
+  "geoCoordinates": [],
+  "isCheckedIn": false,
+  "storeId": null,
+  "checkedInPickupPointId": null,
+  "orderFormId": null
+}
