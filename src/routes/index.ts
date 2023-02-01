@@ -11,6 +11,7 @@ router.get('/dogs', PageController.dogs)
 router.get('/cats', PageController.cats)
 router.get('/fishes', PageController.fishes)
 router.get('/search', SearchController.search)
+router.get('/get-pet/:petId', PageController.petPage)
 
 router.get('/v1/api/all', ApiController.getAll)
 router.get('/v1/api/dogs', ApiController.getDogs)
