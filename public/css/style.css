@@ -154,6 +154,11 @@ footer {
   color: var(--main);
 }
 
+.link-pet {
+  text-decoration: none;
+  color: #000;
+}
+
 @media (max-width: 900px) {
   .list {
     grid-template-columns: repeat(4, 1fr);
