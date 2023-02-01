@@ -1,0 +1,21 @@
+<%- include('../partials/header') %> <% if (banner) { %> <% } %> <% if
+(titlePage) { %>
+<h2><%= titlePage %></h2>
+<% } %> <% if (list.length>0) { %>
+
+<div class="container list">
+  <a href="/get-pet/<%= pet.id %>" target="">
+    <div class="item">
+      <img src="/images/<%= pet.image %>" class="item--image" />
+      <div class="item--name"><%= pet.name %></div>
+      <div class="item--color">Cor: <%= pet.color %></div>
+      <div class="item--genre">Gênero: <%= pet.sex %></div>
+    </div>
+  </a>
+</div>
+
+<% } else { %>
+<div class="container no-list">
+  <h2>O pet não está mais disponível</h2>
+</div>
+<% } %> <%- include('../partials/footer') %>
