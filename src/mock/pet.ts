@@ -2,6 +2,7 @@ import type { Pet } from '../typing/type'
 
 export const data: Array<Pet> = [
   {
+    id: '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'dog',
     image: 'pastor-alemao.jpg',
     name: 'Pastor-alemão',
@@ -9,6 +10,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '2b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'dog',
     image: 'labrador.jpg',
     name: 'Labrador-retriever',
@@ -16,6 +18,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '3b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'dog',
     image: 'zwergspitz.jpg',
     name: 'Zwergspitz',
@@ -23,6 +26,7 @@ export const data: Array<Pet> = [
     sex: 'fêmea',
   },
   {
+    id: '4b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'dog',
     image: 'husky.jpg',
     name: 'Husky Siberiano',
@@ -30,6 +34,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '5b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'dog',
     image: 'golden.jpg',
     name: 'Golden Retriever',
@@ -37,6 +42,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '6b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'dog',
     image: 'poodle.jpg',
     name: 'Poodle',
@@ -44,6 +50,7 @@ export const data: Array<Pet> = [
     sex: 'fêmea',
   },
   {
+    id: '7b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'dog',
     image: 'bulldog.jpg',
     name: 'Bulldog',
@@ -51,6 +58,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '8b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'cat',
     image: 'persa.jpg',
     name: 'Persa',
@@ -58,6 +66,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '9b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'cat',
     image: 'mainecoon.jpg',
     name: 'Maine Coon',
@@ -65,6 +74,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '109d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'cat',
     image: 'bengal.jpg',
     name: 'Bengal',
@@ -72,6 +82,7 @@ export const data: Array<Pet> = [
     sex: 'fêmea',
   },
   {
+    id: '119d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'cat',
     image: 'siames.jpg',
     name: 'Siamês',
@@ -79,6 +90,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '129d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'cat',
     image: 'sphynx.jpg',
     name: 'Sphynx',
@@ -86,6 +98,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '139d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'fish',
     image: 'neon.jpg',
     name: 'Tetra Neon',
@@ -93,6 +106,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '149d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'fish',
     image: 'matogrosso.jpg',
     name: 'Mato Grosso',
@@ -100,6 +114,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '159d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'fish',
     image: 'limpavidro.jpg',
     name: 'Limpa Vidro',
@@ -107,6 +122,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '169d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'fish',
     image: 'tanictis.jpg',
     name: 'Tanictis',
@@ -114,6 +130,7 @@ export const data: Array<Pet> = [
     sex: 'macho',
   },
   {
+    id: '179d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed',
     type: 'fish',
     image: 'acara.jpg',
     name: 'Acará Bandeira',
