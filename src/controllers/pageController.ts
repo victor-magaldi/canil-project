@@ -56,3 +56,16 @@ export const fishes = (req: Request, res: Response) => {
     list,
   })
 }
+export const petPage = (req: Request, res: Response) => {
+  let list = Pet.getAll()
+
+  res.render('pages/page', {
+    menu: createMenuObj('all'),
+    titlePage: 'Todos os animais disponíveis para adoção',
+    banner: {
+      title: 'Todos os animais',
+      backgroundUrl: '/images/allanimals.jpg',
+    },
+    list,
+  })
+}
