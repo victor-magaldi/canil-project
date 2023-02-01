@@ -1,20 +1,16 @@
-<%- include('../partials/header') %> 
-
-<% if (pet) { %>
-  <div class="container list">
-    <a href="/get-pet/<%= pet.id %>" target="">
-      <div class="item">
-        <img src="/images/<%= pet.image %>" class="item--image" />
-        <div class="item--name"><%= pet.name %></div>
-        <div class="item--color">Cor: <%= pet.color %></div>
-        <div class="item--genre">Gênero: <%= pet.sex %></div>
-      </div>
-    </a>
-  </div>
+<%- include('../partials/header') %> <% if (pet) { %>
+<div class="container list">
+  <a href="/get-pet/<%= pet.id %>" target="">
+    <div class="item">
+      <img src="/images/<%= pet.image %>" class="item--image" />
+      <div class="item--name"><%= pet.name %></div>
+      <div class="item--color">Cor: <%= pet.color %></div>
+      <div class="item--genre">Gênero: <%= pet.sex %></div>
+    </div>
+  </a>
+</div>
 <% } else { %>
-  <div class="container no-list">
-    <h2>O pet não encontrado/h2>
-  </div> 
-<% } %>
-
-<%- include('../partials/footer') %>
+<div class="container no-list">
+  <h2>O pet não encontrado ou indisponível</h2>
+</div>
+<% } %> <%- include('../partials/footer') %>
