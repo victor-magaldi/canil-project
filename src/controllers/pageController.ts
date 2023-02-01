@@ -63,11 +63,7 @@ export const petPage = (req: Request, res: Response) => {
 
   res.render('pages/pet-page', {
     menu: createMenuObj('all'),
-    titlePage: 'Todos os animais disponíveis para adoção',
-    banner: {
-      title: 'Todos os animais',
-      backgroundUrl: '/images/allanimals.jpg',
-    },
+    titlePage: 'Adote agora',
     list,
     pet: petfinded,
   })
