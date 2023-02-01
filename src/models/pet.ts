@@ -18,4 +18,8 @@ export const Pet = {
   getFromRace: (type: PetType) => {
     return data.filter((item) => item.type === type)
   },
+
+  findPet: (id: string) => {
+    return data.find((item) => item.id === id)
+  },
 }
