@@ -1,12 +1,14 @@
 <%- include('../partials/header') %> <% if (pet) { %>
 <div class="container pet-page-container">
-  <a href="/get-pet/<%= pet.id %>" target="">
+  <div class="col-pet">
     <img src="/images/<%= pet.image %>" class="pet-page-image" />
+  </div>
+  <div class="col-pet">
     <div class="item--name"><%= pet.name %></div>
     <div class="item--color">Cor: <%= pet.color %></div>
     <div class="item--genre">Gênero: <%= pet.sex %></div>
-  </a>
-  <button class="pet-adopt">Adotar</button>
+    <button class="pet-adopt">Adotar</button>
+  </div>
 </div>
 <% } else { %>
 <div class="container no-list">

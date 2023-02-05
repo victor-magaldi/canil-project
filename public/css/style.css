@@ -159,6 +159,16 @@ footer {
   color: #000;
 }
 
+.pet-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-page-container .col-pet {
+  flex-grow: 1;
+}
+
 @media (max-width: 900px) {
   .list {
     grid-template-columns: repeat(4, 1fr);
